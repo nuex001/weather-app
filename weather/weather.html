@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="/fa/css/font-awesome.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label for="search">Enter a location for weather information</label>
+        <input type="text" id="search" name="search" />
+      </form>
+      <div class="box not-active">
+        <img class="display" src="../image/eb63f171dfa625e4de50cde8e646617c.jpg" alt="" />
+       <div class="icon">
+        <img class="iconImg" src="../image/star.svg" alt="" />
+       </div>
+        <div class="innerbox">
+          <h4>city Name</h4>
+          <h5>weather temperature</h5>
+          <p>
+            <span>9.7</span>
+            <span>&deg;C</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="forecast.js"></script>
+  <script src="app.js"></script>
+</html>
