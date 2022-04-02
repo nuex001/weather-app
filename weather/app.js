@@ -53,4 +53,20 @@ cityForm.addEventListener("submit",(e)=>{
     }).catch(err=>{
         alert("location invalid")
     })
+    // working with local storage
+    localStorage.setItem("city",city);
+
 })
+
+    // checking if  local storage city exist or not
+const localCity = localStorage.getItem("city");
+if (localCity) {
+    // update the ui with new city
+    updateCity(localCity).then(data=>{
+        updateUI(data);
+    }).catch(err=>{
+        alert("location invalid");
+    })
+}else{
+    // console.log("Ddfdf");
+}
